@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  UIStackView-Inside-UITableViewCell
+//  Expandable-TableViewCell-StackView
 //
 //  Created by Akash Malhotra on 7/8/16.
 //  Copyright © 2016 Akash Malhotra. All rights reserved.
