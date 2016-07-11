@@ -22,6 +22,7 @@ Summary
 
 ----------
 
+**IMPORTANT: Make sure you add constraints to the UIStackView with respect to the cell's contentView, or else the dynamic height for cells won't work!**
 
 **Next, populate the cells via** `cellForRowAtIndexPath`
 
