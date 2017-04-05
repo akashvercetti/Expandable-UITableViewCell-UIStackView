@@ -20,19 +20,19 @@ class CustomTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
 
-    func setValues(lyrics: Lyrics) {
+    func setValues(_ lyrics: Lyrics) {
         self.titleLabel.text = lyrics.song
         self.subtitleLabel.text = lyrics.artist
         
         self.descriptionLabel.text = lyrics.lyricsSample
         let lyricsShown = lyrics.lyricsShown
-        self.descriptionLabel.hidden = !lyricsShown
+        self.descriptionLabel.isHidden = !lyricsShown
         
         self.icon.image = lyricsShown ? UIImage(named: "up") : UIImage(named: "down")
     }
